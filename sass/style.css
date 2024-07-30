@@ -109,7 +109,7 @@ h5 {
   top: 0;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .header-title {
@@ -138,8 +138,17 @@ h5 {
 }
 
 .element-center {
-  text-align: center;
   display: flex;
+  text-align: center;
+  flex-direction: row;
+  background-color: #f6F6F6;
+  box-shadow: 0px 2px 0px 3px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  width: 100%;
+}
+
+.element-center2 {
+  text-align: center;
   flex-direction: row;
   background-color: #f6F6F6;
   box-shadow: 0px 2px 0px 3px rgba(0, 0, 0, 0.2);
@@ -236,9 +245,7 @@ h5 {
   margin-right: auto;
 }
 
-.Restaurant-card,
-.Restaurant-card2,
-.Restaurant-card345 {
+.Restaurant-card {
   display: grid;
   flex-direction: column;
   box-sizing: border-box;
@@ -253,12 +260,21 @@ h5 {
   filter: drop-shadow(0 3px 15px rgba(51, 50, 50, 0.338));
 }
 
-.Restaurant-card2 {
-  height: 1530px;
-}
-
-.Restaurant-card345 {
-  height: 1538px;
+.Restaurant-card2 .Restaurant-card345 {
+  display: grid;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background-color: white;
+  object-fit: cover;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(0 3px 15px rgba(51, 50, 50, 0.338));
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .new {
@@ -329,7 +345,7 @@ footer {
   background-color: #353535;
   height: 100%;
   padding-bottom: 10px;
-  margin-top: -50px;
+  margin-top: -40px;
 }
 
 .footerPara {
@@ -366,7 +382,7 @@ li {
 }
 
 .image2 {
-  width: 375px;
+  width: 100%;
   height: 275px;
   object-fit: cover;
 }
@@ -374,25 +390,40 @@ li {
 .body2,
 .body3 {
   background-color: #f6F6F6;
-  width: 375px;
+  width: 100%;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  margin-top: -239px;
-  height: 126.4%;
+  height: 93%;
+  position: absolute;
+  margin-top: -40px;
 }
 
 .body3 {
-  margin-top: -200px;
-  height: 120%;
+  height: 93%;
 }
 
-.corp2 {
+.corp {
   width: 100%;
-  height: 100%;
+  height: 300px;
   margin-left: auto;
   margin-right: auto;
   background-color: #f6F6F6;
   padding-top: 50px;
+}
+
+.corp2 {
+  width: 100%;
+  height: 1550px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f6F6F6;
+}
+
+.corp3 {
+  background-color: #f6F6F6;
+  height: 1450px;
+  width: 100%;
+  padding-bottom: 20px;
 }
 
 .h1M {
@@ -415,14 +446,14 @@ li {
 }
 
 .euro {
-  margin-left: 300px;
+  margin-left: 90%;
   margin-top: -33px;
   font-size: 0.6rem;
   padding-left: 10px;
 }
 
 .numberEuro {
-  margin-left: 300px;
+  margin-left: 90%;
   margin-top: -14px;
   font-size: 0.7rem;
   padding-left: 10px;
@@ -465,15 +496,15 @@ li {
 
 .heart2345 {
   position: absolute;
-  top: 250px;
-  left: 289px;
+  top: 35px;
+  left: 300px;
   font-size: 1.2rem;
 }
 
 .heart-2345 {
   position: absolute;
-  top: 250px;
-  left: 276px;
+  top: 35px;
+  left: 288px;
   font-size: 1.2rem;
   background-clip: text;
   -webkit-background-clip: text;
@@ -518,10 +549,16 @@ li {
   }
   .corp2 {
     width: 100%;
-    height: 686px;
+    height: 1650px;
     margin-left: auto;
     margin-right: auto;
     background-color: #f6F6F6;
+  }
+  .corp3 {
+    background-color: #f6F6F6;
+    height: 1550px;
+    width: 100%;
+    padding-bottom: 20px;
   }
   .image {
     width: 100%;
@@ -539,11 +576,9 @@ li {
     flex-direction: column;
     box-sizing: border-box;
     width: 490px;
-    height: 251px;
   }
   .Restaurant-card2 {
     width: 100%;
-    height: 0%;
   }
   .titre {
     margin-left: 20px;
@@ -588,6 +623,7 @@ li {
   footer {
     background-color: #353535;
     height: 114px;
+    position: relative;
   }
   .footerPara {
     text-decoration: none;
@@ -620,6 +656,7 @@ li {
   }
   ul {
     list-style-type: none;
+    display: flex;
   }
   li {
     border: none;
@@ -628,7 +665,7 @@ li {
   /* page 2 */
   .image2 {
     width: 100%;
-    height: 275px;
+    height: 383px;
     object-fit: cover;
   }
   .body3 {
@@ -636,19 +673,21 @@ li {
     height: 105.4%;
     margin-left: 165px;
     width: 66%;
+    background-color: #ebebeb;
+    position: relative;
   }
   .p2 {
-    margin-left: 210px;
+    margin-left: 16%;
   }
   .Fonction2 {
-    width: 96%;
+    width: 69%;
     height: 69px;
   }
   .numberEuro {
-    margin-left: 93%;
+    margin-left: 90%;
   }
   .euro {
-    margin-left: 92.5%;
+    margin-left: 89.5%;
   }
   .h1M {
     margin-top: 50px;
@@ -670,10 +709,11 @@ li {
     height: 105.4%;
     margin-left: 165px;
     width: 66%;
+    background-color: #ebebeb;
+    position: relative;
   }
   .Restaurant-card345 {
     width: 100%;
-    height: 0%;
   }
   /* classe particuliere pour le coeur */
   .heart6 {
