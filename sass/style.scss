@@ -77,7 +77,7 @@ h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-style: normal;
-  font-size: large;
+  font-size: small;
   text-align: start;
 }
 
@@ -206,7 +206,7 @@ h5 {
   cursor: pointer;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
-  font-size: small;
+  font-size: smaller;
   justify-content: space-around;
 }
 .explorer:hover {
@@ -467,13 +467,6 @@ li {
   margin-bottom: -10px;
   margin-left: 10px;
   font-size: small;
-}
-
-.euro {
-  margin-left: 90%;
-  margin-top: -33px;
-  font-size: 0.6rem;
-  padding-left: 10px;
 }
 
 .numberEuro {
