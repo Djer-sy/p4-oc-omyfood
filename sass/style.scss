@@ -127,7 +127,7 @@ h5 {
   z-index: 10;
 }
 
-.h2M {
+.titre-carte {
   padding-top: 10px;
 }
 
@@ -139,10 +139,7 @@ h5 {
 .fa-solid-fa-heart {
   color: transparent;
   background-image: linear-gradient(#f907b4,#9356DC);
-
-
   opacity: 0;
-
 }
 
 .icons:hover {
@@ -178,20 +175,17 @@ h5 {
   
 }
 
-.backWhite {
+.back-fonctionement {
   background-color: white;
   width: 80%;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
-
 }
-
 
 .white {
   color: rgb(255, 255, 255);
 }
-
 
 .explorer {
   background: linear-gradient(#FF79DA, #9356DC);
@@ -209,6 +203,7 @@ h5 {
   font-size: smaller;
   justify-content: space-around;
 }
+
 .explorer:hover {
   background:linear-gradient(#9356DC,#FF79DA) ;
 }
@@ -245,7 +240,7 @@ h5 {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 13px;
-  padding-top: 5px;
+  padding-top: 3px;
   margin-left: -35px;
 }
 
@@ -336,9 +331,8 @@ h5 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 20px;
-  margin-right: 20px;
 }
+
 .grille2{
   margin-bottom: 50px;
   width: 100%;
@@ -410,8 +404,8 @@ li {
   object-fit: cover;
 }
 
-.body2,
-.body3   {
+.carte2,
+.carte3  {
   background-color: #f6F6F6;
   width: 100%;
   border-top-left-radius: 30px;
@@ -422,9 +416,10 @@ li {
 
 }
 
-.body3 {
+.carte3 {
   height: 93%;
 }
+
 .corp {
   width: 100%;
   height: 300px;
@@ -450,7 +445,7 @@ li {
   padding-bottom: 20px;
 }
 
-.h1M {
+.titre-restaurant {
   font-family: "Shrikhand", serif;
   text-align: left;
   margin-top: 30px;
@@ -459,15 +454,14 @@ li {
   font-weight: 400;
 }
 
-.h2M {
-  padding-top: 10px;
-}
 
-.h2P2345 {
+
+.titre-plat {
   margin-bottom: -10px;
   margin-left: 10px;
   font-size: small;
 }
+
 
 .numberEuro {
   margin-left: 90%;
@@ -476,9 +470,10 @@ li {
   padding-left: 10px;
   font-family : "Roboto";
   font-weight: bold;
+  margin-top: -33px;
 }
 
-.p2 {
+.titre-entree {
   font-family : "Roboto";
   font-weight: 300;
   display: flex;
@@ -488,7 +483,7 @@ li {
 }
 
 
-.p2345 {
+.titre-description {
   font-family : "Roboto";
   margin-left: 10px ;
   font-size: 15px;
@@ -513,13 +508,13 @@ li {
   
 }
 
-.heart2345 {
+.heart-restaurant {
   position: absolute;
   top: 35px;
   left: 300px;
   font-size: 1.2rem;
 }
-.heart-2345 {
+.heart-restaurant-hover {
   position: absolute;
   top: 35px;
   left: 288px;
@@ -531,7 +526,7 @@ li {
   
 }
 
-.heart-2345:hover { 
+.heart-restaurant:hover { 
   background-image: -webkit-linear-gradient(75deg,#FF79DA 47%,#9356DC 53%);
   opacity: 1;
   cursor: pointer;
@@ -549,17 +544,17 @@ li {
   width: 100%;
 }
 
-.backWhite {
-  width: 97%;
+.back-fonctionement {
+  width: 95%;
   height: 228px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: stretch;
-  margin-left: 20px;
+  margin-left: 5%;
 }
 
-.back2white {
+.back2fonctionement {
   display: flex;
   flex-direction: row;
   margin-bottom: 20px;
@@ -603,8 +598,8 @@ li {
   flex-direction: column;
   box-sizing: border-box;
   width: 490px;
-
 }
+
 .Restaurant-card2{
   width: 100%;
 
@@ -625,24 +620,31 @@ li {
   top: 100px;
 }
 
+.background-couleur {
+  background-color: #f6F6F6;
+}
+
 .grille {
   max-width: 1300px;
-  width: 63%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
 }
 
 .grille2 {
 display: flex;
 flex-wrap: wrap;
+gap: 20px;
+}
 
+.alignement-titre {
+margin-left: 5%;
 }
 
 .grid-item {
-  width: 49%;
+  width: 40%;
   height: 251px;
 }
 
@@ -717,7 +719,7 @@ li {
   height: 383px;
   object-fit: cover;
 }
-.body3 {
+.carte3 {
   margin-top: -30px;
   height: 105.4%;
   margin-left: 165px;
@@ -726,7 +728,7 @@ li {
   position: relative;
 }
 
-.p2 {
+.titre-entree {
   margin-left: 16%;
 
 }
@@ -743,17 +745,17 @@ li {
   margin-left: 89.5%;
 
 }
-.h1M {
+.titre-restaurant {
   margin-top: 50px;
   margin-left: 35%;
 }
-.heart2345 {
+.heart-restaurant {
   position: relative;
   top: -45px;
   left: 200px;
 }
 
-.heart-2345 {
+.heart-restaurant-hover {
   position: relative;
   top: -45px;
   left: 158px;
@@ -761,7 +763,7 @@ li {
 
 /* page 3,4,5 */
 
-.body2 {
+.carte2 {
   margin-top: -30px;
   height: 105.4%;
   margin-left: 165px;
@@ -769,7 +771,7 @@ li {
   background-color: #ebebeb;
   position: relative;
 } 
-.Restaurant-card345 {
+.Restaurant-card-page-345 {
   width: 100%;
 }
 /* classe particuliere pour le coeur */
